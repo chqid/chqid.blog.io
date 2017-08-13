@@ -4,9 +4,24 @@ title: 万事屋
 ---
 
 <h1>{{ page.title }}</h1>
-		<ul class="post-preview">
+		<ul class="post">
 	
-		  {% for post in site.posts %}
-		    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-		  {% endfor %}
+		  {% for post in paginator.posts %}
+	<div class="post-preview">
+	    <a href="{{ post.url | prepend: site.baseurl }}">
+	        <h2 class="post-title">            
+	            {{ post.title }}
+	        </h2>
+	        {% if post.subtitle %}
+	        <h3 class="post-subtitle">
+	            {{ post.subtitle }}
+	        </h3>
+	        {% endif %}
+	        <div class="post-content-preview">
+	            {{ post.content | strip_html | truncate:140 }}
+	        </div>
+	    </a>
+	    <p class="post-meta">Posted on {{ post.date | date: "%Y-%m-%d" }}</p>
+	</div>
+	
 		</ul>
