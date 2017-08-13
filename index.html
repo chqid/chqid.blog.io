@@ -8,9 +8,7 @@ title: 万事屋
 	
 		  {% for post in paginator.posts %}
 	<div class="post-preview">
-	    <a href="{{ post.url | prepend: site.baseurl }}">
-	        <h2 class="post-title">            
-	            {{ post.title }}
+	    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
 	        </h2>
 	        {% if post.subtitle %}
 	        <h3 class="post-subtitle">
@@ -25,6 +23,9 @@ title: 万事屋
 	</div>
 	
 		</ul>
+
+
+
 <hr>
 	{% endfor %}
 	
