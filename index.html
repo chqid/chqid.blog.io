@@ -5,12 +5,14 @@ title: 万事屋
 
 <h2>{{ page.title }}</h2>
 
-<p>Recent Blog Posts</p>
+　　<p>最新文章</p>
 
-<ul>
-    {% for post in site.posts %}
-      <li>{{ post.date | date_to_string }}
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-</ul>
+　　<ul>
+
+　　　　{% for post in site.posts %}
+
+　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+
+　　　　{% endfor %}
+
+　　</ul>
