@@ -1,2 +1,2 @@
-# wanshiwu.github.io
-这是万事屋的第一个用于测试的博客:smile:
+# qidongz.github.io
+:smile:纯手写的博客，没有用主题，现在还比较简陋，会不断完善的。
