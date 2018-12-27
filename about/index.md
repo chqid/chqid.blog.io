@@ -1,6 +1,6 @@
 ---
 title: About
-layout: page
+layout: post
 ---
 
 ## 关于
