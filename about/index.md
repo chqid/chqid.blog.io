@@ -1,13 +1,15 @@
 ---
 title: About
-layout: post
+layout: default
 ---
 
-## 关于
+## 关于本站
 
 本博客基于 Github Pages 和 Jekyll。在这儿梳理自己的一些想法，分享一些经验，努力修炼文字，让自己的表达明白了当。
 
-网站图标来自 [iconfont](http://www.iconfont.cn/home/index?spm=a313x.7781069.1998910419.1){:target="_blank"} 的[两支枪](http://www.iconfont.cn/collections/detail?cid=2304){:target="_blank"}所创作的“宇宙星球”。
+## 关于作者
+
+还没有更新。
 
 欢迎交流：q<!-- >@mail.com -->d.z<!-- >#mail@. -->#fo<!-- >#@. -->xmail.com
 
