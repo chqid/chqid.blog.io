@@ -1,7 +1,18 @@
 name: 大象小象
-markdown: kramdown
+
 permalink: /blog/:year/:month/:day/:title
 
+# Markdown Processors
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Plugins
 plugins:
   - jekyll-sitemap
   - jemoji
+  - jekyll-feed
+
+# Atom feed
+feed:
+  path: /archive/atom.xml
