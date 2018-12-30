@@ -20,7 +20,7 @@ use_math: true
 行间公式
 
 $$
-\lim_{x\to0}x^2.
+\cfrac{\sqrt{5}-1}{2}.
 $$
 
 行内公式 $x = \cfrac{\sqrt{5}-1}{2}$.
