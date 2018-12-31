@@ -50,17 +50,15 @@ ul.posts li {
 }
 
 /*------post-navigation-style-----*/
-.post-nav-divider {
-    display: table-cell;
-    width: 10%;
-}
 .post-navigation{
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 .nav-previous{
     float:right;
+    font-size: 1.3em;
 }
 .nav-next{
     float:left;
+    font-size: 1.3em;
 }
