@@ -1,16 +1,16 @@
 <div class="post-navigation">
 	{% if page.previous %}
-	  <a class="previous" href="{{ site.baseurl }}{{ page.previous.url }}" title="{{ post.next.title }}">
-		<i class="fa fa-chevron-left"></i> {{ post.previous.title }}
+	  <a class="previous" href="{{ site.baseurl }}{{ page.previous.url }}" title="{{ post.previous.title }}">
+		<span><<</span>{{ post.previous.title }}
 	  </a>
 	{% else%}
-	  <span class="previous">上一篇</span> 
+	  <span class="previous">已是第一篇</span> 
 	{% endif %}
 	{% if page.next %}
-	  <a class="next" href="{{ site.baseurl }}{{ page.next.url }}" title="{{ post.previous.title }}">
-		{{ post.next.title }} <i class="fa fa-chevron-right"></i>
+	  <a class="next" href="{{ site.baseurl }}{{ page.next.url }}" title="{{ post.next.title }}">
+		{{ post.next.title }}<span>>></span>
 	  </a>
 	{% else %}
-	  <span class="next">下一篇</span> 
+	  <span class="next">已是最后一篇</span> 
 	{% endif %}
 </div>
