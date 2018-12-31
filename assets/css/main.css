@@ -55,10 +55,12 @@ ul.posts li {
 }
 
 .nav-previous{
+    display: table-cell;
     float:right;
     font-size: 1.3em;
 }
 .nav-next{
+    display: table-cell;
     float:left;
     font-size: 1.3em;
 }
