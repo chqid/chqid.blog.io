@@ -1,14 +1,14 @@
 <div class="post">
 	{% if page.next %}
 	  <a href="{{ site.baseurl }}{{ page.next.url }}" title="{{ post.next.title }}">
-		<span><</span> {{ post.next.title }}
+		上一篇：{{ post.next.title }}
 	  </a>
 	{% else%}
 	  <span>已是第一篇</span> 
 	{% endif %}
 	{% if page.previous %}
 	  <a href="{{ site.baseurl }}{{ page.previous.url }}" title="{{ post.previous.title }}">
-		{{ post.previous.title }} <span>></span>
+		<span>{{ post.previous.title }} ></span>
 	  </a>
 	{% else %}
 	  <span>已是最后一篇</span> 
