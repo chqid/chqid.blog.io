@@ -5,11 +5,9 @@
 		<span><</span>上一篇：{{ page.next.title }}
 	  </a>
 	{% else%}
-	  <span class="">已是第一篇</span> 
+	  <span class="nav-next">已是第一篇</span> 
 	{% endif %}
 	</div>
-
-	<span class="post-nav-divider"></span>
 
 	<div class="nav-previous">
 	{% if page.previous %}
@@ -17,7 +15,7 @@
 		下一篇：{{ page.previous.title }}<span>></span>
 	  </a>
 	{% else %}
-	  <span>已是最后一篇</span> 
+	  <span class="nav-previous">已是最后一篇</span> 
 	{% endif %}
 	</div>
 </div>

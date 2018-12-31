@@ -55,9 +55,7 @@ ul.posts li {
     width: 10%;
 }
 .post-navigation{
-    display: table-cell;
     font-size: 1.4em;
-    width: 45%;
 }
 
 .nav-previous{
