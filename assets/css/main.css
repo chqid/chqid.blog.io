@@ -51,16 +51,19 @@ ul.posts li {
 
 /*------post-navigation-style-----*/
 .post-navigation{
-    font-size: 1.3em;
+    display: table;
+    width: 100%;
 }
 
 .nav-previous{
     display: table-cell;
+    width: 50%;
     float:right;
     font-size: 1.3em;
 }
 .nav-next{
     display: table-cell;
+    width: 50%;
     float:left;
     font-size: 1.3em;
 }
