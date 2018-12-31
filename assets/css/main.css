@@ -1,3 +1,4 @@
+/*------basic-style-----*/
 body {
     margin: 60px auto;
     width: 70%;
@@ -42,7 +43,20 @@ ul.posts li {
     list-style: none;
 }
 
+/*------MathJax-style-----*/
 .MathJax_Display {
     font-size: 1.5em;
     line-height: 1.4em;
+}
+
+/*------post-navigation-style-----*/
+.post-navigation{
+	font-size: 1.4em;
+}
+
+.previous{
+    float:left;
+}
+.next{
+    float:right;
 }
