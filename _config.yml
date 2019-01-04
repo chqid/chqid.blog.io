@@ -16,6 +16,9 @@ highlighter: rouge
 highlight:
 line_number: true
 
+# Website favicon
+favicon: /assets/images/favicon.ico
+
 # Plugins
 plugins:
   - jekyll-sitemap
