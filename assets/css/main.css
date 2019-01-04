@@ -57,13 +57,20 @@ ul.posts li {
 
 .nav-previous{
     display: table-cell;
-    width: 50%;
+    width: 45%;
     text-align:right;
     font-size: 1.3em;
 }
 .nav-next{
     display: table-cell;
-    width: 50%;
+    width: 45%;
     text-align:left;
+    font-size: 1.3em;
+}
+
+.back-to-top{
+    display: table-cell;
+    width: 10%;
+    text-align: center;
     font-size: 1.3em;
 }
