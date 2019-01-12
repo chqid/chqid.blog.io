@@ -1,6 +1,6 @@
 /*------basic-style-----*/
 body {
-    margin: 0;
+    margin: 0 auto;
     width: 70%;
 }
 nav ul, footer ul {
@@ -35,7 +35,7 @@ footer {
 }
 
 ul.posts { 
-    margin: 0; 
+    margin: 20px auto 40px; 
     font-size: 1.5em;
 }
 
