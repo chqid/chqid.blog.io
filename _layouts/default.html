@@ -1,15 +1,7 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>{{ page.title }}</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-		<!-- favicon -->
-		<link href="/assets/images/favicon.ico" rel="icon" type="image/x-icon" />
-		{% if page.use_math %}
-				{% include mathjax.html %}
-			{% endif %}
+		{% include head.html %}
 	</head>
 	<body>
 		<nav>
