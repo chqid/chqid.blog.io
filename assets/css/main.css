@@ -1,8 +1,4 @@
 /*------basic-style-----*/
-body {
-    margin: 0 auto;
-    width: 70%;
-}
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
@@ -34,13 +30,23 @@ footer {
     font-size: .8em;
 }
 
-ul.posts { 
+/* ul.posts { 
     margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
+    font-size: 16px;
+} */
 
 ul.posts li {
     list-style: none;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    position:relative;
+    line-height:1;
+    text-align:left;
+    font-size:16px;
+    padding-top:50px
 }
 
 /*------MathJax-style-----*/
@@ -59,18 +65,15 @@ ul.posts li {
     display: table-cell;
     width: 45%;
     text-align:right;
-    font-size: 1.3em;
 }
 .nav-next{
     display: table-cell;
     width: 45%;
     text-align:left;
-    font-size: 1.3em;
 }
 
 .back-to-top{
     display: table-cell;
     width: 10%;
     text-align: center;
-    font-size: 1.3em;
 }
