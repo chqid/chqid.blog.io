@@ -25,8 +25,9 @@ nav ul li, footer ul li {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-weight: 100;
 }
 p {
     font-size: 20px;
@@ -38,10 +39,6 @@ p {
 .footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
-}
-
-ul.posts li {
-    list-style: none;
 }
 
 .container {
@@ -68,18 +65,35 @@ ul.posts li {
     color: #222;
 }
 
-.container a:hover {
+.container a:hover,
+.container .main-nav-link:hover, 
+.container .footer .footer-link:hover, 
+.container .post-navigation .post-nav-link:hover,
+.container .tag-link:hover {
     text-decoration: underline;
     color: #777;
     transition: color 200ms;
 }
 
-.container .main-nav-link, .container .footer .footer-link, .container .post-navigation .post-nav-link {
+.container .main-nav-link, 
+.container .footer .footer-link, 
+.container .post-navigation .post-nav-link,
+.container .tag-link {
     text-decoration: none;
     color: #999;
 }
 
-.date {
+.tag {
+    display: inline-block;
+    font-size: 24px;
+}
+
+.container .article-title-date {
+    display: inline-block;
+    font-size: 80%;
+}
+
+.date, .container .article-title-date {
     color: #888;
 }
 
