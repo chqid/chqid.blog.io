@@ -8,9 +8,9 @@ title: 大象小象
 <div>
     {% for post in site.posts %}
     <div>
-      <div class="date">
+      <div class="article-title-date">
         {{ post.date | date_to_string }}
-      </span>
+      </div>
       <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a>
