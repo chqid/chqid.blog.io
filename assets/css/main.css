@@ -30,7 +30,8 @@ h1 {
 }
 p {
     font-size: 20px;
-    line-height: 2;
+    line-height: 1.5;
+    margin-bottom: 1.2em;
     color: #333;
 }
 
@@ -55,7 +56,10 @@ ul.posts li {
 
 @media only screen and (max-width:640px) {
     .container {
-        width: 90%;
+        width: 80%;
+    }
+    p {
+        font-size: 18px;
     }
 }
 
@@ -70,7 +74,7 @@ ul.posts li {
     transition: color 200ms;
 }
 
-.container .main-nav-link, .container .footer .footer-link {
+.container .main-nav-link, .container .footer .footer-link, .container .post-navigation .post-nav-link {
     text-decoration: none;
     color: #999;
 }
