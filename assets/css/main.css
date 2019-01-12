@@ -24,22 +24,13 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 
-nav a, footer a, .post a, .post-navigation a {
-    text-decoration: none;
-    color: #999;
-}
-
-nav a:hover, footer a:hover, .post a:hover, .post-navigation a:hover {
-    text-decoration: underline;
-}
-
 h1 {
     font-size: 2.5em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
     font-size: 20px;
-    line-height: 1.4em;
+    line-height: 2;
     color: #333;
 }
 
@@ -77,6 +68,11 @@ ul.posts li {
     text-decoration: underline;
     color: #777;
     transition: color 200ms;
+}
+
+.container .main-nav-link, .container .footer .footer-link {
+    text-decoration: none;
+    color: #999;
 }
 
 .date {
