@@ -9,12 +9,6 @@
 	{% endif %}
 	</div>
 
-	<div class="back-to-top">
-		<a class="post-nav-link" href="#top">
-			<i class="fas fa-angle-double-up"></i>
-		</a>    
-	</div>
-
 	<div class="nav-previous">
 	{% if page.previous %}
 	  <a class="post-nav-link" href="{{ site.baseurl }}{{ page.previous.url }}" title="{{ page.previous.title }}">
@@ -24,4 +18,13 @@
 	  <span></span> 
 	{% endif %}
 	</div>
+</div>
+
+<div class="back-to-top">
+	<a class="post-nav-link" href="#top">
+		<i class="fas fa-angle-up">
+			::before
+		</i>
+		返回顶部
+	</a>    
 </div>

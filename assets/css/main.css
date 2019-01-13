@@ -128,17 +128,22 @@ p {
 
 .nav-previous{
     display: table-cell;
-    width: 45%;
+    width: 50%;
     text-align:right;
 }
 .nav-next{
     display: table-cell;
-    width: 45%;
+    width: 50%;
     text-align:left;
 }
 
 .back-to-top{
-    display: table-cell;
-    width: 10%;
+    display: inline-block;
     text-align: center;
+    vertical-align: middle;
+    width: 20%;
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 4px 11px;
+    border-width: 1px;
 }
