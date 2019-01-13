@@ -88,9 +88,12 @@ p {
 .container .footer .footer-link:hover, 
 .container .post-navigation .post-nav-link:hover,
 .container .tag .tag-link:hover {
+    color: #1abc9c;
+    transition:color .1s linear
+}
+
+.container .footer .footer-link:hover {
     text-decoration: underline;
-    color: #777;
-    transition: color 200ms;
 }
 
 .container .article-title-date {
