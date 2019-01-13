@@ -3,8 +3,12 @@ layout: default
 title: 标签
 ---
 <h1>{{ page.title }}</h1>
-<ul class="posts">
+<div class="tag">
 	{% for tag in site.tags %}
-		<li><a href="{{ site.BASE_PATH }}/tags.html#{{ tag[0] }}">{{ tag[0] }}<span>{{ tag[1].size }}</span></a></li>
+		<div class="tag-link">
+			<a href="{{ site.BASE_PATH }}/tags.html#{{ tag[0] }}">
+				{{ tag[0] }}<span>{{ tag[1].size }}</span>
+			</a>
+		</div>
 	{% endfor %}
-</ul>
+</div>
