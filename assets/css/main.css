@@ -24,6 +24,10 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 
+ul.posts li {
+    list-style: none;
+}
+
 h1 {
     font-size: 2em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -60,7 +64,21 @@ p {
     }
 }
 
+.tag {
+    display: inline-block;
+    font-size: 22px;
+}
+
+.container .main-nav-link, 
+.container .footer .footer-link, 
+.container .post-navigation .post-nav-link,
+.container .tag .tag-link {
+    text-decoration: none;
+    color: #999;
+}
+
 .container a {
+    display: inline-block;
     text-decoration: none;
     color: #222;
 }
@@ -69,23 +87,10 @@ p {
 .container .main-nav-link:hover, 
 .container .footer .footer-link:hover, 
 .container .post-navigation .post-nav-link:hover,
-.container .tag-link:hover {
+.container .tag .tag-link:hover {
     text-decoration: underline;
     color: #777;
     transition: color 200ms;
-}
-
-.container .main-nav-link, 
-.container .footer .footer-link, 
-.container .post-navigation .post-nav-link,
-.container .tag-link {
-    text-decoration: none;
-    color: #999;
-}
-
-.tag {
-    display: inline-block;
-    font-size: 24px;
 }
 
 .container .article-title-date {
