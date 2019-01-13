@@ -1,5 +1,5 @@
 /*------basic-style-----*/
-*, *:before, *:after {
+*, *::before, *::after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -38,6 +38,30 @@ p {
     line-height: 1.8;
     margin-bottom: 1.2em;
     color: #333;
+}
+
+blockquote {
+    margin: 50px auto;
+    color: #555555;
+    padding: 1.2em 30px 1.2em 75px;
+    border-left: 8px solid #78c0a8;
+    line-height: 1.6;
+    position: relative;
+    background: #ededed;
+}
+
+blockquote::before {
+    font-family: Arial;
+    content: "\201C";
+    color: #78c0a8;
+    font-size: 4em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+  
+blockquote::after {
+    content: "";
 }
 
 .footer {
