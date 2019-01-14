@@ -8,7 +8,6 @@
 html {
     color:#333;
     background:#fff;
-    -webkit-text-size-adjust:100%;
     -ms-text-size-adjust:100%;
     text-rendering:optimizelegibility
 }
@@ -44,7 +43,7 @@ blockquote {
     margin: 40px auto;
     color: #555555;
     padding: 1.2em 30px 1.2em 75px;
-    border-left: 8px solid #33A6B8;
+    border-left: 4px solid #33A6B8;
     line-height: 1.6;
     position: relative;
     background: #ededed;
@@ -151,14 +150,16 @@ blockquote::after {
     width: 100%;
 }
 
-.nav-previous{
+.nav-previous, .nav-next {
     display: table-cell;
     width: 50%;
+    vertical-align: top;
+}
+
+.nav-previous{
     text-align:right;
 }
 .nav-next{
-    display: table-cell;
-    width: 50%;
     text-align:left;
 }
 
