@@ -5,10 +5,12 @@ title: 标签
 <h1>{{ page.title }}</h1>
 <div class="tag">
 	{% for tag in site.tags %}
-		<div>
-			<a class="tag-link" href="{{ site.BASE_PATH }}/tags.html/#/{{ tag[0] }}">
-				{{ tag[0] }}<span>{{ tag[1].size }}</span>
-			</a>
-		</div>
+		<ul>
+			<li>
+				<a class="tag-link" href="{{ site.BASE_PATH }}/tags/#{{ tag[0] }}">
+					{{ tag[0] }}<span>{{ tag[1].size }}</span>
+				</a>
+			</li>
+		</ul>
 	{% endfor %}
 </div>
