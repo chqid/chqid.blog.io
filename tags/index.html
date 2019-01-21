@@ -6,7 +6,7 @@ title: 标签
 <div class="tag">
 	{% for tag in site.tags %}
 		<div>
-			<a class="tag-link" href="{{ site.BASE_PATH }}/tags.html#{{ tag[0] }}">
+			<a class="tag-link" href="{{ site.BASE_PATH }}/tags.html/#/{{ tag[0] }}">
 				{{ tag[0] }}<span>{{ tag[1].size }}</span>
 			</a>
 		</div>
