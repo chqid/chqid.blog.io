@@ -8,13 +8,24 @@ title: 标签
 		{% for tag in site.tags %}
 			<li>
 				<a class="tag-link" href="{{ site.BASE_PATH }}/tags/#{{ tag[0] }}">
-					{{ tag[0] }}<span>{{ tag[1].size }}</span>
+					{{ tag[0] }}<span>({{ tag[1].size }})</span>
 				</a>
 			</li>
 		{% endfor %}
 	</ul>
 </div>
 
-<div>
-
+<div class="tag">
+	{% for tag in site.tags %}
+	<div>
+		<h3>{{ tag[0] }}</h3>
+		<ul>
+			{% for post.tag in site.tags[tag] %}
+			<li>
+				<a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+	{% endfor %}
 </div>
