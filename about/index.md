@@ -9,8 +9,6 @@ layout: default
 
 ## 关于作者
 
-还没有更新。
-
 欢迎交流：q<!-- >@mail.com -->d.z<!-- >#mail@. -->#fo<!-- >#@. -->xmail.com(#替换为@)
 
 ## 版权
