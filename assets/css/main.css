@@ -95,6 +95,7 @@ blockquote::after {
 .tag {
     display: block;
     font-size: 22px;
+    font-weight: 100;
 }
 
 .container .main-nav-link, 
