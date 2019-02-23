@@ -4,7 +4,7 @@ name: 大象小象
 permalink: /blog/:year/:month/:day/:title
 
 # Pagination
-paginate: 15
+paginate: 10
 
 # Markdown Processors
 markdown: kramdown
