@@ -5,6 +5,7 @@ permalink: /blog/:year/:month/:day/:title
 
 # Pagination
 paginate: 10
+paginate_path: "page:num"
 
 # Markdown Processors
 markdown: kramdown
@@ -24,6 +25,7 @@ plugins:
   - jekyll-sitemap
   - jemoji
   - jekyll-feed
+  - jekyll-paginate
 
 # Atom feed
 feed:
