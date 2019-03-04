@@ -8,9 +8,7 @@ title: 大象小象
 <div>
     {% for post in paginator.posts %}
     <div>
-      <div class="article-title-date">
-        {{ post.date | date_to_string }}
-      </div>
+      <time datetime="{{ post.date | date:"%Y-%m-%d" }}" class="article-title-date">{{ post.date | date:"%Y-%m-%d" }}</time>
       <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a>
