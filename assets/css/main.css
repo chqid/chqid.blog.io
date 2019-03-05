@@ -8,9 +8,12 @@
 html {
     color:#333;
     background:#fff;
-    scroll-behavior: smooth;
     -ms-text-size-adjust:100%;
     text-rendering:optimizelegibility
+}
+
+html, body { 
+    scroll-behavior:smooth;
 }
 
 nav ul, footer ul {
