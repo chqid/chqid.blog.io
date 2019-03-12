@@ -192,6 +192,29 @@ blockquote::after {
     background: rgba(60, 60, 60, 0.5);
 }
 
+/*----------index-pagination-----------*/
+.container .pagination {
+    display: inline-block;
+}
+  
+.container .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd; /* Gray */
+}
+
+.container .pagination a.active {
+    background-color: #00aaff;
+    color: white;
+  }
+  
+.container .pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+
 /* The work below, CSSBox, is released under the Creative Commons
    Attribution-ShareAlike 4.0 license and is available on
    https://github.com/TheLastProject/CSSBox. You are not required to add
