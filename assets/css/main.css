@@ -72,6 +72,11 @@ blockquote::after {
     content: "";
 }
 
+.entry-title {
+    font-family: 'Noto Serif CJK SC', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, '宋体', serif;
+    font-weight: 100;
+}
+
 .footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
