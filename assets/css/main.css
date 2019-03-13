@@ -16,6 +16,11 @@ html, body {
     scroll-behavior:smooth;
 }
 
+body {
+    font-family: 'Noto Serif CJK SC', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, '宋体', serif;
+    font-weight: 200;
+}
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
@@ -70,11 +75,6 @@ blockquote::before {
   
 blockquote::after {
     content: "";
-}
-
-.entry-title {
-    font-family: 'Noto Serif CJK SC', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, '宋体', serif;
-    font-weight: 100;
 }
 
 .footer {
