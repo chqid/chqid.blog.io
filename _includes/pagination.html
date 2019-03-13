@@ -15,14 +15,14 @@
 		{% if paginator.page == 1 %}
 			<span class="page-number current">1</span> <!--active-->
 		{% else %}
-			<a class="page-number current" href="/">1</a>
+			<a class="page-number" href="/">1</a>
 		{% endif %}
 
 		{% for page in (2..paginator.total_pages) %}
 			{% if page == paginator.page %}
 				<span class="page-number current">{{ page }}</span> <!--active-->
 			{% else %}
-				<a class="page-number current" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+				<a class="page-number" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
 			{% endif %}
 		{% endfor %}
 
