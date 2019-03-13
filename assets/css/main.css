@@ -52,7 +52,7 @@ blockquote {
     margin: 40px auto;
     color: #555555;
     padding: 1.2em 30px 1.2em 75px;
-    border-left: 4px solid #33A6B8;
+    border-left: 4px solid #028bff;/*---pre color #33A6B8---*/
     line-height: 1.6;
     position: relative;
     background: #ededed;
@@ -61,7 +61,7 @@ blockquote {
 blockquote::before {
     font-family: Arial;
     content: "\201C";
-    color: #33A6B8;
+    color: #028bff;
     font-size: 4em;
     position: absolute;
     left: 10px;
@@ -121,7 +121,7 @@ blockquote::after {
 .container .footer .footer-link:hover, 
 .container .post-navigation .post-nav-link:hover,
 .container .tag .tag-link:hover {
-    color: #22c5e5;
+    color: #028bff;/*----pre color #22c5e5----*/
     transition:color .1s linear
 }
 
@@ -195,24 +195,15 @@ blockquote::after {
 /*----------index-pagination-----------*/
  .pagination {
     border-top: none;
-    margin: 120px 0 40px;
-    text-align: center;
+    margin: 10px 0 0px;
 }
 
 .container .pagination .next, 
 .container .pagination .page-number, 
 .container .pagination .prev {
     margin-bottom: 10px;
-    border-top: 0;
-    border-bottom: 1px solid #eee;
     padding: 0 10px;
-}
-
-.container .pagination .next, 
-.container .pagination .page-number, 
-.container .pagination .prev {
     border-bottom: 0;
-    border-top: 1px solid #eee;
     transition-property: border-color;
     transition-duration: .2s;
     transition-timing-function: ease-in-out;
@@ -221,8 +212,7 @@ blockquote::after {
 
 .container .pagination .page-number.current {
     color: #fff;
-    background: #ccc;
-    border-top-color: #ccc;
+    background: #028bff;
 }
 
 /* .container .pagination a {
