@@ -193,16 +193,48 @@ blockquote::after {
 }
 
 /*----------index-pagination-----------*/
-.container .pagination {
-    display: inline-block;
+ .pagination {
+    border-top: none;
+    margin: 120px 0 40px;
+    text-align: center;
+}
+
+.container .pagination .next, 
+.container .pagination .page-number, 
+.container .pagination .prev {
+    margin-bottom: 10px;
+    border-top: 0;
+    border-bottom: 1px solid #eee;
+    padding: 0 10px;
 }
   
-.container .pagination a {
+.container .pagination .prev {
+    margin-left: 0;
+}
+
+.container .pagination .next, 
+.container .pagination .page-number, 
+.container .pagination .prev {
+    border-bottom: 0;
+    border-top: 1px solid #eee;
+    transition-property: border-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.container .pagination .page-number.current {
+    color: #fff;
+    background: #ccc;
+    border-top-color: #ccc;
+}
+
+/* .container .pagination a {
     color: black;
     float: left;
     padding: 8px 16px;
     text-decoration: none;
-    border: 1px solid #ddd; /* Gray */
+    border: 1px solid #ddd; 
 }
 
 .container .pagination a.active {
@@ -212,7 +244,7 @@ blockquote::after {
   
 .container .pagination a:hover:not(.active) {
     background-color: #ddd;
-}
+} */
 
 
 /* The work below, CSSBox, is released under the Creative Commons

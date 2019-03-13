@@ -1,33 +1,35 @@
-{% if paginator.total_pages > 1 %}
-<!-- 分页代码 -->
-	{% if paginator.previous_page %}
-		{% if paginator.previous_page == 1 %}
-			<a href="/">上一页</a>
+<div class="pagination">
+	{% if paginator.total_pages > 1 %}
+	<!-- 分页代码 -->
+		{% if paginator.previous_page %}
+			{% if paginator.previous_page == 1 %}
+				<a class="prev" href="/">上一页</a>
+			{% else %}
+				<a class="prev" href="/page{{ paginator.previous_page }}">上一页</a>
+			{% endif %}
+
 		{% else %}
-			<a href="/page{{ paginator.previous_page }}">上一页</a>
+			<span class="prev">上一页</span> <!--disabled-->
 		{% endif %}
 
-	{% else %}
-		<span class="disabled">上一页</span>
-	{% endif %}
-
-	{% if paginator.page == 1 %}
-		<span class="active">1</span>
-	{% else %}
-		<a href="/">1</a>
-	{% endif %}
-
-	{% for page in (2..paginator.total_pages) %}
-		{% if page == paginator.page %}
-			<span class="active">{{ page }}</span>
+		{% if paginator.page == 1 %}
+			<span class="page-number current">1</span> <!--active-->
 		{% else %}
-			<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+			<a class="page-number current" href="/">1</a>
 		{% endif %}
-	{% endfor %}
 
-	{% if paginator.next_page %}
-		<a href="/page{{ paginator.next_page }}">下一页</a>
-	{% else %}
-		<span class="disabled">下一页</span>
+		{% for page in (2..paginator.total_pages) %}
+			{% if page == paginator.page %}
+				<span class="page-number current">{{ page }}</span> <!--active-->
+			{% else %}
+				<a class="page-number current" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+			{% endif %}
+		{% endfor %}
+
+		{% if paginator.next_page %}
+			<a class="next" href="/page{{ paginator.next_page }}">下一页</a>
+		{% else %}
+			<span class="next">下一页</span> <!--disabled-->
+		{% endif %}
 	{% endif %}
-{% endif %}
+</div>
