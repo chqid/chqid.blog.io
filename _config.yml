@@ -33,9 +33,3 @@ plugins:
 # Atom feed
 feed:
   path: atom.xml
-
-# Declare license on posts
-post_copyright:
-  enable: true
-  license: CC BY-NC-SA 4.0
-license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
