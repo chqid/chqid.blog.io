@@ -1,6 +1,7 @@
 title: 大象小象
 name: 大象小象
 description: "读书，写作，思考"
+author: wizqd
 keyword: "wizqd, wizard, blog, 博客, jekyll, GitHub, 文字"
 
 permalink: /blog/:year/:month/:day/:title
@@ -32,3 +33,9 @@ plugins:
 # Atom feed
 feed:
   path: atom.xml
+
+# Declare license on posts
+post_copyright:
+  enable: true
+  license: CC BY-NC-SA 4.0
+license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
