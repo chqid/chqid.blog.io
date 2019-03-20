@@ -1,14 +1,18 @@
 {% if site.post_copyright.enable %}
 	<div class="article-declaration">
 		<div>
-			<strong>{{ __.post.copyright.author | append: __.symbol.colon }}</strong>
+			<strong>作者：</strong>
 			{{ site.author }}
 		</div>
 		<div>
-			<strong>{{ __.post.copyright.link | append: __.symbol.colon }}</strong>
+			<strong>修改时间：</strong>
+			<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+		</div>
+		<div>
+			<strong>原文链接：</strong>
 			<a href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.url | absolute_url }}</a>
 		</div>
 		<div>
-			<strong>{{ __.post.copyright.license_title | append: __.symbol.colon }} </strong>
-			{{ __.post.copyright.license_content | replace_first: '%s', site.post_copyright.license_url | replace_first: '%s', site.post_copyright.license }}		</div>
+			<strong>版权：</strong>
+			{{ __.post.copyright.license_content | replace_first: '%s', site.post_copyright.license_url | replace_first: '%s', site.post_copyright.license }}</div>
 	</div>
