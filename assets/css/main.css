@@ -149,11 +149,12 @@ blockquote::after {
 
 /*------post_copyright-----*/
 .post_copyright {
-    margin: 40px auto;
-    color: #555555;
-    padding: 1.2em 30px 1.2em 75px;
+    margin: 20px auto;
+    color: #9b9b9b;
+    padding: 1.2em 30px 1.2em 30px;
     line-height: 1.6;
-    position: absolute;
+    position: relative;
+    text-align: left;
     background: #ededed;
 }
 
