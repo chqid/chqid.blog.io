@@ -15,7 +15,8 @@ permalink: /
         {% endif %}
         <link rel="stylesheet" href="{{ "css/front.css" | prepend: site.baseurl }}">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
     <body>
         <div class="content">
@@ -32,15 +33,15 @@ permalink: /
 
                 <ul>
                     {% if site.blog_url %}
-                    <li><a class="fa fa-2x fa-blogger" href="{{ site.baseurl }}{{ site.blog_url }}"><span class="description">Blog</span></a></li>
+                    <li><i class="fab fa-blogger" href="{{ site.baseurl }}{{ site.blog_url }}"><span class="description">Blog</span></i></li>
                     {% endif %}
 
                     {% if site.github_username %}
-                    <li><a class="fa fa-2x fa-github" href="https://github.com/{{ site.github_username }}"><span class="description">GitHub</span></a></li>
+                    <li><i class="fab fa-github" href="https://github.com/{{ site.github_username }}"><span class="description">GitHub</span></i></li>
                     {% endif %}
 
                     {% if site.gitlab_username %}
-                    <li><a class="fa fa-2x fa-gitlab" href="https://gitlab.com/{{ site.gitlab_username }}"><span class="description">GitLab</span></a></li>
+                    <li><i class="fab fa-gitlab" href="https://gitlab.com/{{ site.gitlab_username }}"><span class="description">GitLab</span></i></li>
                     {% endif %}
 
                     {% if site.codepen_username %}
@@ -112,7 +113,7 @@ permalink: /
                     {% endif %}
 
                     {% if site.email %}
-                    <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}"><span class="description">Email</span></a></li>
+                    <li><i class="far fa-envelope" href="mailto:{{ site.email }}"><span class="description">Email</span></i></li>
                     {% endif %}
 
                     {% if site.public_key_url %}
