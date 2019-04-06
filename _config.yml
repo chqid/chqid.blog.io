@@ -50,3 +50,9 @@ favicon_img_path: "imgs/favicon.ico"
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jemoji
+  - jekyll-feed
