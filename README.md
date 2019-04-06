@@ -1,5 +1,18 @@
-# qidongz.github.io
-:smile:纯手写的博客，现在还比较简陋，会不断完善的。
+# front cover jekyll theme
 
-## License
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本博客中的作品(/_post/*)采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。</div>
+## Why choose this jekyll theme for your front page?
+* You don't have to modify any HTML, everything can be modified in config.yml.
+* Very lightweight. No Javascript, No Bootstrap etc..
+* MIT licensed.
+
+
+## See it in action
+<a href="https://dashingcode.github.io/front-cover/">Live demo page</a>
+
+## Credits
+The background image that was used as an example comes from Tom Hall.
+You can find it on <a href="https://flic.kr/p/pqEPBb">Flickr</a>.
+It's licensed under Creative-Commons.
+
+This theme makes use of the amazing <a href="http://fontawesome.io/">Font Awesome</a> icons.
+
