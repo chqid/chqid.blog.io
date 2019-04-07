@@ -1,6 +1,6 @@
 # Site settings
-name: Qidong Zhang
-description: "Nifty little description"
+name: QD 的个人主页
+description: "Trust the Process"
 url: ""
 
 
@@ -30,11 +30,11 @@ email: qd.z@foxmail.com
 # public_key_url: "https://raw.pastebin.com/LINK-TO-PUBLIC-KEY"
 
 
-avatar: yes
+avatar: false
 #avatar_img_path: "imgs/avatar.jpg""
 # You can link to your GitHub image. That way it will get updated
 # automatically whenever you change your GitHub profile picture
-avatar_img_path: "https://avatars2.githubusercontent.com/u/17301305"
+# avatar_img_path: "https://avatars2.githubusercontent.com/u/17301305"
 
 
 front_img: yes
